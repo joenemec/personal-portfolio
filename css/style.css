@@ -1,3 +1,39 @@
 /* FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/* VARIABLES */
+:root {
+  /* FONTS */
+  --font-playfair: "Playfair Display", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  /* COLORS */
+  --darker-grey-color: #2b2424;
+  --dark-grey-color: #555050;
+  --brown-color: #2f2828;
+}
+
+/* BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.7;
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
