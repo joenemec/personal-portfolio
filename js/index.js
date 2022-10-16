@@ -11,11 +11,15 @@ const addEventOnElem = function (elem, type, callback) {
 };
 
 // NAVBAR TOGGLE
+const menuBurger = document.querySelector("[data-menu]");
+const menuContent = document.querySelectorAll("[data-menu-toggler]");
 const navbar = document.querySelector("[data-navbar]");
-const navToggler = document.querySelectorAll("[data-nav-toggler]");
+const overlay = document.querySelector("[data-overlay]");
 
 const toggleNav = function () {
+  menuBurger.classList.toggle("openmenu");
   navbar.classList.toggle("active");
+  overlay.classList.toggle("active");
 };
 
-addEventOnElem(navToggler, "click", toggleNav);
+addEventOnElem(menuContent, "click", toggleNav);
