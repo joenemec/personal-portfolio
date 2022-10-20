@@ -253,7 +253,7 @@ ion-icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
   width: min(250px, 100%);
   background-color: var(--blue-color);
   transition: var(--transition-2);
