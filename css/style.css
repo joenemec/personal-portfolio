@@ -284,11 +284,9 @@ ion-icon {
 
 .nav__socials {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  gap: 1rem;
-  padding-block-end: 10rem;
-  padding-inline-end: 2.5rem;
+  gap: 2rem;
+  padding-block-end: 3rem;
+  padding-inline-start: 2.5rem;
 }
 
 .nav__socials ion-icon {
