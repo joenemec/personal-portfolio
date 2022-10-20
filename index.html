@@ -7,167 +7,350 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <!-- JS -->
     <script defer src="./js/index.js"></script>
     <title>Joseph Nemec: My Portfolio</title>
   </head>
   <body>
+    <div class="loading-screen">
+      <h2 class="loading-screen__name">Joseph Nemec.</h2>
+      <p class="loading-screen__title">Welcome to my portfolio.</p>
+    </div>
     <header class="header">
       <div class="container">
         <a href="#" class="header-logo">JOSEPH NEMEC.</a>
-
         <div class="burger-menu" data-menu>
           <div class="burger-menu__content" data-menu-toggler>
             <span class="line-1"></span>
             <span class="line-2"></span>
           </div>
         </div>
-
         <nav class="header__nav" data-navbar>
           <ul class="nav__links">
             <li class="nav__item">
-              <a href="#" class="nav__link">ABOUT</a>
+              <a href="#about" class="nav__link">ABOUT</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">PROJECTS</a>
+              <a href="#projects" class="nav__link">PROJECTS</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">SKILLS</a>
+              <a href="#skills" class="nav__link">SKILLS</a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link">RESUME</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">CONTACT</a>
+              <a href="#" class="nav__link" data-contact-toggler>CONTACT</a>
             </li>
           </ul>
-
           <div class="nav__socials">
-            <ion-icon name="logo-linkedin"></ion-icon>
-            <ion-icon name="logo-github"></ion-icon>
+            <a
+              href="https://www.linkedin.com/in/joseph-nemec-bb6a97213/"
+              target="_blank"
+            >
+              <ion-icon name="logo-linkedin" aria-label="Link to LinkedIn">
+              </ion-icon>
+            </a>
+            <a
+              href="https://github.com/joenemec?tab=repositories"
+              target="_blank"
+            >
+              <ion-icon
+                name="logo-github"
+                aria-label="Link to GitHub"
+                data-contact-icon
+              >
+              </ion-icon
+            ></a>
           </div>
         </nav>
-
-        <div class="overlay" data-overlay data-menu-toggler></div>
+        <div
+          class="overlay"
+          data-overlay
+          data-menu-toggler
+          data-contact-toggler
+        ></div>
       </div>
     </header>
 
-    <!-- HERO SECTION -->
     <main>
-      <section class="hero section">
+      <!-- ============ -->
+      <!-- HERO SECTION -->
+      <!-- ============ -->
+      <section class="hero" id="about">
         <div class="container">
           <div class="hero-content">
-            <div class="hero-content__headline">A FRONTEND DEVELOPER</div>
-            <h1 class="hero-content__main">
-              That loves bringing ideas to life.
-            </h1>
-          </div>
-          <div class="about-content">
-            <p class="description-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+            <h1 class="hero-content__heading">Create.</h1>
+            <p class="hero-content__about">
+              I'm a self-taught front-end developer currently located in Tulsa,
+              Oklahoma. I love learning about new technologies and building user
+              interfaces for the web.
             </p>
           </div>
         </div>
       </section>
 
+      <!-- ==================== -->
       <!-- PERSONAL INFORMATION -->
-      <section class="personal">
+      <!-- ==================== -->
+      <aside class="personal">
         <div class="personal-btns">
-          <button class="personal-btn contact-btn">CONTACT</button>
+          <button class="personal-btn contact-btn" data-contact-toggler>
+            CONTACT
+          </button>
           <button class="personal-btn resume-btn">RESUME</button>
         </div>
         <div class="personal-icons">
-          <ion-icon name="logo-linkedin"></ion-icon>
-          <ion-icon name="logo-github"></ion-icon>
+          <a
+            href="https://www.linkedin.com/in/joseph-nemec-bb6a97213/"
+            target="_blank"
+          >
+            <ion-icon
+              name="logo-linkedin"
+              aria-label="Link to LinkedIn"
+              data-contact-icon
+            >
+            </ion-icon>
+          </a>
+          <a
+            href="https://github.com/joenemec?tab=repositories"
+            target="_blank"
+          >
+            <ion-icon
+              name="logo-github"
+              aria-label="Link to GitHub"
+              data-contact-icon
+            >
+            </ion-icon
+          ></a>
         </div>
-      </section>
+      </aside>
 
+      <!-- ================= -->
       <!-- PROJECTS SECTION -->
-      <section class="projects">
+      <!-- ================= -->
+      <section class="projects section" id="projects">
         <div class="container">
-          <div class="section-content">
-            <div class="section-content__headline">PROJECTS I HAVE MADE</div>
-            <h1 class="section-content__main">My creation journey.</h1>
+          <div class="section-heading">
+            <div class="section-heading__text">Projects I have made.</div>
           </div>
-          <!-- PROJECT 1 -->
-          <div class="project-content project-1">
-            <div class="project-content__info">
-              <h4 class="project-name">Rock, Paper, Scissors</h4>
-              <p class="project-tools">HTML - Sass - JavaScript</p>
+          <div class="projects-content">
+            <div class="projects-content__one projects-content__row">
+              <div class="projects-content__name">
+                <div class="project-number">01</div>
+                <h4 class="project-name">Rock, Paper, Scissors - Game</h4>
+                <p class="project-tools">HTML - Sass - JavaScript</p>
+              </div>
+              <div class="projects-content__description">
+                <p class="project-description">
+                  After learning the basics of web development, I decided that I
+                  wanted to make a simple rock, paper, scissors game. While
+                  simplicity is often the way to go about projects, I decided to
+                  really test my skills and make the game inside of Nintendo
+                  Game Boy. Out of all of my projects, this required the most
+                  amount of work.
+                </p>
+                <div class="project-btns">
+                  <a
+                    href="https://github.com/joenemec/rps-game"
+                    target="_blank"
+                  >
+                    <button class="project-btn">Source Code.</button>
+                  </a>
+                  <a
+                    href="https://joenemec.github.io/rps-game/"
+                    target="_blank"
+                  >
+                    <button class="project-btn">View Live.</button>
+                  </a>
+                </div>
+              </div>
+              <div class="projects-content__img">
+                <img src="/images/project-one.png" alt="" />
+              </div>
             </div>
-            <div class="project-content__img">
-              <img
-                src="./images/project-1-phone.png"
-                alt="Project One Mobile Image"
-              />
+            <div class="projects-content__two projects-content__row">
+              <div class="projects-content__name">
+                <div class="project-number">02</div>
+                <h4 class="project-name">Phó Real - Restaurant</h4>
+                <p class="project-tools">HTML - CSS - JavaScript</p>
+              </div>
+              <div class="projects-content__description">
+                <p class="project-description">
+                  While I was thinking of what my next project could be, I would
+                  regularly stumble across family-owned restaurant's sites and
+                  notice how user-hostile they were. I decided to pick a local
+                  restaurant and remake their site. I faced many challenges
+                  during this project, but the hardest was creating the dynamic
+                  menu. Once I started learning React.js, I realized how much of
+                  a smoother experience it would have made this project.
+                </p>
+                <div class="project-btns">
+                  <a
+                    href="https://github.com/joenemec/restaurant-site"
+                    target="_blank"
+                  >
+                    <button class="project-btn">Source Code.</button>
+                  </a>
+                  <a
+                    href="https://joenemec.github.io/restaurant-site/"
+                    target="_blank"
+                  >
+                    <button class="project-btn">View Live.</button>
+                  </a>
+                </div>
+              </div>
+              <div class="projects-content__img">
+                <img src="/images/project-two.png" alt="" />
+              </div>
             </div>
-            <div class="project-content__description">
-              <p class="description-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-          </div>
-          <!-- PROJECT 2 -->
-          <div class="project-content project-2">
-            <div class="project-content__info">
-              <h4 class="project-name">Phó Real - Restaurant</h4>
-              <p class="project-tools">HTML - CSS - JavaScript</p>
-            </div>
-            <div class="project-content__img">
-              <img
-                src="./images/project-2-phone.png"
-                alt="Project Two Mobile Image"
-              />
-            </div>
-            <div class="project-content__description">
-              <p class="description-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-          </div>
-          <!-- PROJECT 3 -->
-          <div class="project-content project-3">
-            <div class="project-content__info">
-              <h4 class="project-name">ACTIVELIFE - Activity Tracker</h4>
-              <p class="project-tools">HTML - CSS - React</p>
-            </div>
-            <div class="project-content__img">
-              <img
-                src="./images/project-3-phone.png"
-                alt="Project Three Mobile Image"
-              />
-            </div>
-            <div class="project-content__description">
-              <p class="description-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
+            <div class="projects-content__three projects-content__row">
+              <div class="projects-content__name">
+                <div class="project-number">03</div>
+                <h4 class="project-name">ACTIVELIFE - Activity Tracker</h4>
+                <p class="project-tools">HTML - CSS - React.js</p>
+              </div>
+              <div class="projects-content__description">
+                <p class="project-description">
+                  I chose an activity tracker for my first React.js project
+                  because I was always involved in athletics when I was growing
+                  up. During the beginning of my learning journey, I heard
+                  React.js made things so much easier and allowed people to
+                  build applications faster. While this is true, there
+                  definitely was a learning curve to this framework. I found
+                  having components really allowed me to focus on one task at a
+                  time and not to get overwhelmed.
+                </p>
+                <div class="project-btns">
+                  <a
+                    href="https://github.com/joenemec/activelife-tracker"
+                    target="_blank"
+                  >
+                    <button class="project-btn">Source Code.</button>
+                  </a>
+                  <a
+                    href="https://joenemec.github.io/activelife-tracker/"
+                    target="_blank"
+                  >
+                    <button class="project-btn">View Live.</button>
+                  </a>
+                </div>
+              </div>
+              <div class="projects-content__img">
+                <img src="/images/project-three.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- SKILLS SECTION -->
-      <section class="skills">
+      <section class="skills section" id="skills">
         <div class="container">
-          <div class="section-content">
-            <div class="section-content__headline">SKILLS</div>
-            <h1 class="section-content__main">What I have learned.</h1>
+          <div class="section-heading">
+            <div class="section-heading__text">Skills I have learned.</div>
+          </div>
+          <div class="skills-cards">
+            <div class="skills-cards__card">
+              <div class="skills__card-border">
+                <div class="skills__card-img">
+                  <img src="/images/html-logo.png" alt="HTML Logo" />
+                </div>
+                <div class="border__text border__text-html">HTML</div>
+              </div>
+            </div>
+            <div class="skills-cards__card">
+              <div class="skills__card-border">
+                <div class="skills__card-img">
+                  <img src="/images/css-logo.png" alt="CSS Logo" />
+                </div>
+                <div class="border__text border__text-css">CSS</div>
+              </div>
+            </div>
+            <div class="skills-cards__card">
+              <div class="skills__card-border">
+                <div class="skills__card-img">
+                  <img src="/images/js-logo.png" alt="JavaScript Logo" />
+                </div>
+                <div class="border__text border__text-js">JavaScript</div>
+              </div>
+            </div>
+            <div class="skills-cards__card">
+              <div class="skills__card-border">
+                <div class="skills__card-img">
+                  <img src="/images/react-logo.png" alt="React Logo" />
+                </div>
+                <div class="border__text border__text-react">React.js</div>
+              </div>
+            </div>
+            <div class="skills-cards__card">
+              <div class="skills__card-border">
+                <div class="skills__card-img">
+                  <img src="/images/sass-logo.png" alt="Sass Logo" />
+                </div>
+                <div class="border__text border__text-sass">Sass</div>
+              </div>
+            </div>
+            <div class="skills-cards__card">
+              <div class="skills__card-border">
+                <div class="skills__card-img">
+                  <img src="/images/git-logo.png" alt="Git Logo" />
+                </div>
+                <div class="border__text border__text-git">Git</div>
+              </div>
+            </div>
+            <div class="skills-cards__card">
+              <div class="skills__card-border">
+                <div class="skills__card-img">
+                  <img src="/images/figma-logo.png" alt="Figma Logo" />
+                </div>
+                <div class="border__text border__text-figma">Figma</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+      <!-- CONTACT SECTION -->
+      <section class="contact" data-contact>
+        <div class="contact__content">
+          <div class="contact__content-heading">
+            <h3 class="contact__content-main">Get in touch with me.</h3>
+            <ion-icon
+              name="close-circle-outline"
+              data-contact-toggler
+            ></ion-icon>
+          </div>
+          <form
+            class="form"
+            action="https://formsubmit.co/10ca5e693809e0f3ee6cae9ef4e3c4c2"
+            method="POST"
+          >
+            <!-- Honeypot -->
+            <input type="text" name="_honey" style="display: none" />
+            <!-- Disable Captcha -->
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="" />
+            <div class="form___input">
+              <input required type="text" name="name" placeholder="NAME" />
+              <input required type="email" name="email" placeholder="EMAIL" />
+              <input
+                required
+                type="text"
+                name="message"
+                placeholder="MESSAGE"
+              />
+            </div>
+            <div class="form__submit">
+              <button class="form__submit-btn" type="submit">SUBMIT</button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
+
     <!-- ION ICONS -->
     <script
       type="module"
