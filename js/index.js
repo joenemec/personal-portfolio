@@ -12,7 +12,7 @@ window.onbeforeunload = function () {
   }, 1800);
 };
 
-// window.onbeforeunload();
+window.onbeforeunload();
 
 const addEventOnElem = function (elem, type, callback) {
   if (elem.length > 1) {
