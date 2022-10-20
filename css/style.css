@@ -283,13 +283,15 @@ ion-icon {
 }
 
 .nav__socials {
-  padding-block-end: 3.5rem;
-  padding-inline-start: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-block-end: 5rem;
+  padding-inline-start: 3rem;
 }
 
 .nav__socials ion-icon {
-  padding-inline: 0.5rem;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: var(--white-color);
 }
 
