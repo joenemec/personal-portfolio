@@ -63,8 +63,8 @@
   /* ==================== */
   .personal {
     position: fixed;
-    left: -15.5rem;
-    bottom: 20rem;
+    left: -7rem;
+    bottom: 16rem;
     display: flex;
     align-items: center;
     gap: 3rem;
@@ -88,20 +88,9 @@
     border: var(--black-color) 1px solid;
   }
 
-  .resume-btn {
-    color: var(--white-color);
-    background-color: var(--black-color);
-    border: var(--black-color) 1px solid;
-  }
-
   :is(.contact-btn):is(:hover, :focus) {
     color: var(--white-color);
     background-color: var(--black-color);
-  }
-
-  :is(.resume-btn):is(:hover, :focus) {
-    color: var(--black-color);
-    background-color: var(--white-color);
   }
 
   .personal-icons {
@@ -157,6 +146,7 @@
   }
 }
 
+/* RESPONSIVE */
 @media (min-width: 90rem) {
   /* ================ */
   /* PROJECTS SECTION */

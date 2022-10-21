@@ -1,11 +1,9 @@
 /* FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 /* VARIABLES */
 :root {
   /* FONTS */
-  --font-playfair: "Playfair Display", sans-serif;
   --font-poppins: "Poppins", sans-serif;
   /* FONT WEIGHT */
   --font-light: 300;
@@ -16,16 +14,9 @@
   /* ION-ICON */
   --ionicon-stroke-width: 16px;
   /* COLORS */
-  --darker-grey-color: #2b2424;
-  --dark-grey-color: #555050;
-  --light-grey-color: rgb(43, 36, 36, 0.6);
-  --brown-color: #2f2828;
   --black-color: #000;
   --white-color: #fff;
-  --pink-color: #d593a8;
-  --green-color: #4a990c;
   --blue-color: #0400cd;
-  --light-blue-color: #423fe4;
   /* TRANSITIONS */
   --transition-1: 0.2s ease;
   --transition-2: 0.3s ease;
@@ -645,15 +636,13 @@ ion-icon {
   border-bottom: var(--white-color) 1px solid;
 }
 
-.form__submit {
-}
-
 .form__submit-btn {
   padding-block: 1rem;
   padding-inline: 5rem;
   letter-spacing: 1px;
   font-family: var(--font-poppins);
   font-weight: var(--font-medium);
+  color: var(--black-color);
   background-color: var(--white-color);
   transition: var(--transition-1);
 }
