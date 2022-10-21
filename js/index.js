@@ -20,6 +20,7 @@ console.log(imgTargets);
 
 const loadImg = (entries, observer) => {
   const [entry] = entries;
+  console.log(entry);
 
   if (!entry.isIntersecting) return;
 
