@@ -170,6 +170,10 @@ ion-icon {
   background-color: var(--blue-color);
 }
 
+.lazy-img {
+  filter: blur(20px);
+}
+
 /* ====== */
 /* HEADER */
 /* ====== */
@@ -436,7 +440,6 @@ ion-icon {
 }
 
 .projects-content__img img {
-  /* filter: grayscale(100%); */
   object-fit: contain;
 }
 
@@ -507,6 +510,10 @@ ion-icon {
 
 .border__text-figma {
   right: -6.3rem;
+}
+
+.border__text-word {
+  right: -11rem;
 }
 
 .skills__card-img {
