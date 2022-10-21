@@ -118,7 +118,7 @@
 
   .personal-icons ion-icon {
     font-size: 3.5rem;
-    color: var(--blue-color);
+    color: var(--black-color);
   }
 
   :is(.personal-icons ion-icon):is(:hover, :focus) {

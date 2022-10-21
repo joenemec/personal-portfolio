@@ -5,41 +5,14 @@ const loadScreen = document.querySelector(".loading-screen");
 const body = document.body;
 
 window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
+  window.scrollTo(50, 0);
   setTimeout(() => {
     loadScreen.classList.toggle("inactive");
     body.style.overflowY = "unset";
-  }, 1800);
+  }, 2000);
 };
 
 window.onbeforeunload();
-
-// LAZY LOADING IMAGES
-const imgTargets = document.querySelectorAll("img[data-src]");
-console.log(imgTargets);
-
-const loadImg = (entries, observer) => {
-  const [entry] = entries;
-  console.log(entry);
-
-  if (!entry.isIntersecting) return;
-
-  entry.target.src = entry.target.dataset.src;
-
-  entry.target.addEventListener("load", () => {
-    entry.target.classList.remove("lazy-img");
-  });
-
-  observer.unobserve(entry.target);
-};
-
-const imgObserver = new IntersectionObserver(loadImg, {
-  root: null,
-  threshold: 0,
-  rootMargin: "-200px",
-});
-
-imgTargets.forEach((img) => imgObserver.observe(img));
 
 // CLICK EVENTS
 const addEventOnElem = function (elem, type, callback) {
